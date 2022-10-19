@@ -76,9 +76,6 @@ Queue<int> recMultiMerge(Vector<Queue<int>>& all) {
     else if (all.size()==1) {
         return all[0];
     }
-    else if (all.size()==2) {
-        return binaryMerge(all[0], all[1]);
-    }
     else {
         Vector<Queue<int>> left = all.subList(0,floor(all.size()/2));
         Vector<Queue<int>> right = all.subList(floor(all.size()/2),all.size()-floor(all.size()/2));
